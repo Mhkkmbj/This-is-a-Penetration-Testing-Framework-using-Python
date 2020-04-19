@@ -1,0 +1,46 @@
+#! /bin/bash
+
+number=0
+while [ $number -ge 0 ]; do
+	echo " "
+	echo "Menu : "
+	echo "Input 1) IP/Port scanning(XMAS Scan- FIN Scan- SYN Scan). "
+	echo "Input 2) Network sniffing"
+	echo "Input 3) Cracking password using John the Ripper"
+	echo "Input 4) Show all the services currently running"
+
+	echo -n "Enter ur Choice "
+	read Choice
+		case "$Choice" in
+
+			1 )
+				clear
+				echo "1) Scanning result"
+			        python3 ipportscan.py	
+				;;
+			2 )
+				clear		
+				echo "2) Network sniffer"	
+				python3 networksniffer.py
+				;;
+			3 )
+				clear
+				echo "3) Cracked Password"				
+				python3 johntheripper.py
+				;;
+			4 )
+				clear
+				echo "4) Running Services"
+				python3 services.py
+				;;
+			5 )
+				clear
+				./scraper.py
+				;;
+			* )
+				clear
+				echo "Invalid input.Try again"
+				;;
+
+		esac
+done
