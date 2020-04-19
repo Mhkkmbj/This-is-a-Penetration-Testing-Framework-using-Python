@@ -8,4 +8,4 @@ It can perform following tasks:-
 4.Collecting Email/banner/phones/URLs from a given URL.
 5.Display running services on a given HOST.
 
-# The program can be excuted using caller
+# The program can be excuted using Caller
