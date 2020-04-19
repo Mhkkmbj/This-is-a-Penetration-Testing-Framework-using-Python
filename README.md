@@ -6,6 +6,6 @@ It can perform following tasks:-
 2.Network Sniffing
 3.Cracking the password using John the ripper.
 4.Collecting Email/banner/phones/URLs from a given URL.
-5.Display running services on agiven HOST.
+5.Display running services on a given HOST.
 
 # The program can be excuted using caller
