@@ -1,0 +1,46 @@
+#! /bin/bash
+
+number=0
+while [ $number -ge 0 ]; do
+	echo " "
+	echo "Menu : "
+	echo "Input 1) Check current services running on a machine. "
+	echo "Input 2) Show number of files/subdirectories within the current directory"
+	echo "Input 3) List the files and subdirectories within the current directory"
+	echo "Input 4) Show all the processes currently running"
+
+	echo -n "Enter ur Choice "
+	read Choice
+		case "$Choice" in
+
+			1 )
+				clear
+				echo "1) Scanning result"
+			        python3 services.py	
+				;;
+			2 )
+				clear		
+				echo "2) Network sniffer"	
+				python3 networksniffer.py
+				;;
+			3 )
+				clear
+				echo "3) List the files and subdirectories within the current directory"				
+				python3 ipportscan.py
+				;;
+			4 )
+				clear
+				echo "4) Cracked password"
+				python3 johntheripper.py
+				;;
+			5 )
+				clear
+				./scraper.py
+				;;
+			* )
+				clear
+				echo "Invalid input.Try again"
+				;;
+
+		esac
+done
